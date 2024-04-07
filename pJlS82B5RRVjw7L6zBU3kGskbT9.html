@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+     
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+    </script>
+  </head>
+
+  <body>
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+              <!-- Nav brand -->
+              <a href="index.html" class="nav-brand">Contributions</a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-area">
+      <div class="container">
+        <img src="./assets/images/bulksplash-_nnaro_-pljrql-yq88.jpg" alt="" style="height: 500px; width: 100%; object-fit: cover" />
+        <h3>Elderly Population Struggling with Poverty: A Growing Concern</h3>
+        <p><strong></strong> The elderly population is facing a growing concern of poverty and lack of resources. As the cost of living rises, many seniors are forced to make difficult decisions between necessary expenses such as food and medication. With lower incomes from Social Security or other retirement plans, it can be increasingly difficult for them to meet their basic needs. This issue has become more prominent in recent years due to an increase in life expectancy and rising medical costs. 
+
+It’s important that we address this problem so our elderly population isn’t left behind by society. We need policies that provide financial assistance for those who are struggling with poverty and ensure they have access to vital services like healthcare, housing, transportation, nutrition programs, etc.. Additionally, providing job opportunities for older adults can help them stay financially secure while still contributing their valuable experience and skillset back into the workforce. 
+
+We must also focus on reducing social isolation among seniors which often leads to depression or other mental health issues related to loneliness. Creating activities within communities where elders can come together will not only benefit their physical well-being but also give them a sense of purpose in life again - something that is essential at any age! 
+
+In conclusion, it’s essential that we take action against elder poverty before it becomes even more widespread than it already is today. By creating solutions tailored specifically towards meeting the needs of our aging population we will be able to continue taking care of one another now and into the future!</p>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <p class="copywrite-text">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner">
+      <p style="color: #000000">
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with 
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+      </p>
+
+      <button class="close-cookie">×</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        $('.close-cookie').click(function () {
+          $('.cookie-banner').fadeOut();
+        });
+      };
+    </script>
+
+    <script>
+      let elems = document.querySelectorAll('.server-name');
+      elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname;
+      });
+    </script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

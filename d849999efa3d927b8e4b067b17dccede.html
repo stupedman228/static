@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+     
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+    </script>
+  </head>
+
+  <body>
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+              <!-- Nav brand -->
+              <a href="index.html" class="nav-brand">Beneficiaries</a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-area">
+      <div class="container">
+        <img src="./assets/images/bulksplash-harlynkingm-dgp-759-ukk.jpg" alt="" style="height: 500px; width: 100%; object-fit: cover" />
+        <h3>Retirement Savings Tips for Seniors</h3>
+        <p><strong></strong> A majority of seniors are in their late 50s and 60s, putting them in the stage of their lives when their careers are winding down and they may be starting to think about retirement. The good news is that retirement planning doesn't have to be a huge burden or require a lot of work on your part-all you need are a few good retirement savings tips. 
+
+First and foremost, you need to start thinking about your retirement savings early in your career-this is the time to make the most amount of headway. If you're not saving for retirement yet, you might be willing to give up some the luxuries you might take for granted such as paying off your mortgage early or spending less on your weekly shopping spree. 
+
+If you're able to save money on a regular basis, it will add up over time. You should consider setting up a retirement savings account in a tax-advantaged investment such as a 401k or IRA. In addition to the money you'll be saving on your taxes, a 401k or IRA account will also offer you the opportunity to participate in employer matching funds, which can increase your total retirement savings. 
+
+If you're not able to save money on your own, don't worry-</p>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <p class="copywrite-text">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner">
+      <p style="color: #000000">
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with 
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+      </p>
+
+      <button class="close-cookie">×</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        $('.close-cookie').click(function () {
+          $('.cookie-banner').fadeOut();
+        });
+      };
+    </script>
+
+    <script>
+      let elems = document.querySelectorAll('.server-name');
+      elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname;
+      });
+    </script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

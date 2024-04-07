@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+     
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+    </script>
+  </head>
+
+  <body>
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+              <!-- Nav brand -->
+              <a href="index.html" class="nav-brand">Supplement</a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-area">
+      <div class="container">
+        <img src="./assets/images/bulksplash-nikoline_nik-rwfpxykk3qm.jpg" alt="" style="height: 500px; width: 100%; object-fit: cover" />
+        <h3>How to Maximize Your Salary Through Effective Negotiation</h3>
+        <p><strong></strong> Negotiating can be a great way to maximize your salary and increase the value of your position. With effective negotiation, you can ensure that you are being compensated fairly for the work you do. Here are some tips on how to negotiate effectively: 
+
+1) Research Your Worth - Before beginning negotiations, it is important to research what similar positions in your industry earn so that you have an idea of what is fair compensation. Knowing this information will help give you leverage during negotiations. 
+
+2) Be Prepared - Have specific facts about why you deserve more money ready ahead of time such as recent successes or accomplishments at work or any additional responsibilities taken on since starting with the company. Having these prepared will make it easier to argue for higher pay when actually negotiating with someone else. 
+
+3) Know What You Want - It's important to go into negotiations knowing exactly what kind of salary range and benefits package would make sense for both parties involved. Don't be afraid to ask questions if there's something unclear; understanding all aspects of the situation will give everyone involved a better chance at success. 
+
+4) Ask Questions - Asking questions throughout the negotiation process can help clarify expectations and keep conversations focused on finding common ground between both sides' interests and needs rather than simply arguing over numbers alone . This helps create a collaborative atmosphere where each side feels like they're getting their point across without having too much disagreement from either party involved in the discussion .  
+
+5) Stay Positive & Professional- Negotiations should remain civil, even when tensions get high; staying positive throughout discussions is key in order maintain professionalism while still advocating for yourself effectively!</p>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <p class="copywrite-text">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner">
+      <p style="color: #000000">
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with 
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+      </p>
+
+      <button class="close-cookie">×</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        $('.close-cookie').click(function () {
+          $('.cookie-banner').fadeOut();
+        });
+      };
+    </script>
+
+    <script>
+      let elems = document.querySelectorAll('.server-name');
+      elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname;
+      });
+    </script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

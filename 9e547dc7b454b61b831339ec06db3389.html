@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+     
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+    </script>
+  </head>
+
+  <body>
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+              <!-- Nav brand -->
+              <a href="index.html" class="nav-brand">Loans</a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-area">
+      <div class="container">
+        <img src="./assets/images/bulksplash-vidarnm-lottpqoed7c.jpg" alt="" style="height: 500px; width: 100%; object-fit: cover" />
+        <h3>Unlocking the Secrets of Social Security: What You Need to Know</h3>
+        <p><strong></strong> Social Security is a crucial part of retirement planning, yet many people don’t understand how it works. Knowing the basics can help you maximize your benefits and plan for your future. Here are some key points to consider when unlocking the secrets of Social Security: 
+
+When should I begin taking my Social Security Benefits? You can start receiving payments as early as age 62 or wait until 70, but there are pros and cons to both options. Starting earlier will result in lower monthly payments than if you waited; however, these smaller payments might last longer because you have more years of collecting them. Waiting until after full retirement age (66-67 depending on birth year) will give you larger monthly checks but fewer total years for collection.  
+
+How much money will I get from Social Security? This depends on several factors such as income history during working years, marital status, and whether any other family members qualify for benefits based on your record. The best way to determine an estimate is by creating an account with the Social Security Administration at ssa.gov/myaccount where they provide personalized estimates based on personal data provided upon sign up. 
+ 
+What happens if I work while collecting Social Security Retirement Benefits? If under 66 (full retirement age), earnings over certain thresholds may reduce the amount received each month through taxation or “early filing reduction." After reaching full retirement age, there is no limit to how much one can earn without penalty; however this could cause an increase in taxes paid since all earned income is now taxable regardless of source. 
+
+Understanding social security doesn't have to be complicated - just take time to do research and explore resources like those mentioned here so that you're well informed about what's available to make sure comfortable financial stability during retirement!</p>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <p class="copywrite-text">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner">
+      <p style="color: #000000">
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with 
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+      </p>
+
+      <button class="close-cookie">×</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        $('.close-cookie').click(function () {
+          $('.cookie-banner').fadeOut();
+        });
+      };
+    </script>
+
+    <script>
+      let elems = document.querySelectorAll('.server-name');
+      elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname;
+      });
+    </script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

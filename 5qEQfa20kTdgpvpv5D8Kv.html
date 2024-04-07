@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+     
+    <title>Articles</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const currentDate = new Date();
+      const day = currentDate.getDate();
+      const month = currentDate.getMonth() + 1; // Месяцы начинаются с 0, поэтому добавляем 1
+      const year = currentDate.getFullYear();
+
+      const formattedDate = `${day}.${month}.${year}`;
+    </script>
+  </head>
+
+  <body>
+    <header class="header-area">
+      <!-- Navbar Area -->
+      <div class="newsbox-main-menu">
+        <div class="classy-nav-container breakpoint-off">
+          <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="classy-navbar justify-content-between" id="newsboxNav">
+              <!-- Nav brand -->
+              <a href="index.html" class="nav-brand">Funds</a>
+
+              <div class="classy-navbar-toggler">
+                <span class="navbarToggler"><span></span><span></span><span></span></span>
+              </div>
+
+              <div class="classy-menu">
+                <div class="classycloseIcon">
+                  <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                </div>
+
+                <div class="classynav">
+                  <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="terms.html">Terms and conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-area">
+      <div class="container">
+        <img src="./assets/images/bulksplash-the_real_napster-vuoiqw4oeli.jpg" alt="" style="height: 500px; width: 100%; object-fit: cover" />
+        <h3>Social Security: Good Idea Almost Ruined by Own CEOs</h3>
+        <p><strong></strong> Social Security is one of the most important social programs in the United States. Since its inception in the 1930s, Social Security has provided a basic income to American seniors. In addition, Social Security has helped to reduce poverty among seniors, and has helped to provide economic security to those who have difficulty getting jobs.
+
+However, Social Security is also an important program for young adults and children. For children, Social Security helps to ensure that they have an income during their teenage years and after they leave school. In addition, Social Security provides an important source of income for adults who have difficulty getting jobs.
+
+Social Security faces significant challenges. Some of the most serious challenges are due to the actions of the CEOs of large companies. These CEOs have been very critical of Social Security, and they have tried to convince the American people to abandon Social Security in favor of private retirement programs.
+
+However, the American people have not been persuaded by the CEOs. In recent years, the popularity of Social Security has increased, and the program will continue to provide a basic income to American seniors even if the program is not privatized.</p>
+      </div>
+    </div>
+
+    <footer class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="footer-content text-center">
+              <p class="copywrite-text">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Copyright
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="cookie-banner">
+      <p style="color: #000000">
+        The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with 
+        <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+      </p>
+
+      <button class="close-cookie">×</button>
+    </div>
+
+    <script>
+      window.onload = function () {
+        $('.close-cookie').click(function () {
+          $('.cookie-banner').fadeOut();
+        });
+      };
+    </script>
+
+    <script>
+      let elems = document.querySelectorAll('.server-name');
+      elems.forEach((elem) => {
+        elem.innerHTML = window.location.hostname;
+      });
+    </script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
